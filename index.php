@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <style>
+        /* General Styling */
+body {
+  font-family: sans-serif; /* Choose a clean sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+header {
+  background-color: #35424a; /* Dark gray header */
+  color: white;
+  padding: 1rem 0;
+  display: center;
+  justify-content: space-between; /* Align logo and title */
+  align-items: center; /* Vertically center items */
+}
+header img { /* School logo */
+  image: url(logo.jpg) no-repeat;
+  height: 150px;
+  width: auto;
+  margin-right: 5rem;
+  float: right;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding: 0 30rem; /* Add some padding around the title */
+}
+
+
+
+nav {
+  background-color: #444; /* Slightly lighter gray navigation */
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Distribute menu items evenly */
+}
+
+nav li {
+  margin: 0 1rem; /* Add spacing between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  background-color: rgb(232, 62, 125); /* Darker gray on hover */
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Welcome Message Styling */
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+ 
+}
+p{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Information System</h1>
+        
+        
+    </header>
+    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="student.php">Manage Students</a></li>
+                <li><a href="course.php">Manage Courses</a></li>
+                <li><a href="attendance.php">Attendance Tracking</a></li>
+                <li><a href="gradebook.php">Gradebook</a></li>
+                <li><a href="report.php">Reports</a></li>
+               <li> <a href="logout.php">Log out</a></li>
+                
+            </ul>
+        </nav>
+        <h2>Welcome to the Student Information System</h2>
+        <p>Please select an option from the navigation menu above to get started.</p>
+    </div>
+</body>
+
+</html>

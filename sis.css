@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    background: url(bg.jpg!sw800) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    color: #eee7e7; /* Darker text for readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for form elements */
+.container {
+    background-color: #242222; /* White background for the container */
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 400px; /* Set max width to make it look good on larger screens */
+    margin: 100px auto; /* Center the container vertically and horizontally */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+    text-align: center;
+}
+
+
+/* Heading styles */
+h2 {
+    color: #f7fcf7; /* Green color for the heading */
+    font-size: 24px; /* Larger text for the heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Styling for labels */
+label {
+    font-size: 16px;
+    color: #efeaea; /* Darker color for the labels */
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between the input fields */
+    border-radius: 5px;
+    border: 1px solid #fbf4f4; /* Soft border */
+    box-sizing: border-box; /* Ensure padding doesn’t break layout */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #869b87; /* Change border color to green on focus */
+    background: transparent;
+    outline: none; /* Remove the default outline */
+}
+
+/* Submit button styling */
+button {
+    background-color: #ee486c; /* Green background */
+    background: transparent;
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on the submit button */
+button:hover {
+    background-color: #b21860; /* Darker green on hover */
+}
+
+/* Link styling */
+a {
+    color: #eff3ef; /* Green color for links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+/* Paragraph styling for messages */
+p {
+    color: #f8f2f2; /* Light gray for text */
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+/* Style for the table in the view data page */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #726e6e; /* Light gray borders */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #de3980; /* Green background for headers */
+    color: white;
+    font-weight: bold;
+}
+td img {
+
+    max-width: 200px;  /* Increase the size */
+    max-height: 200px; /* Increase the size */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        width: 80%; /* Make container take up more width on small screens */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px; /* Make the heading font size smaller */
+    }
+
+    input[type="text"], 
+    input[type="password"], 
+    button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
